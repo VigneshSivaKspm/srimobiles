@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Upload Mobile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Upload Mobile Details</h1>
+        <form action="/upload_mobile" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="brand">Brand</label>
+                <select class="form-control" id="brand" name="brand" required>
+                    <option value="">Select Brand</option>
+                    <!-- Most Popular Brands -->
+                    <option value="Samsung">Samsung</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                    <option value="Redmi">Redmi</option>
+                    <option value="Realme">Realme</option>
+                    <option value="Vivo">Vivo</option>
+                    <option value="iQOO">iQOO</option>
+                    <option value="OnePlus">OnePlus</option>
+                    <option value="Oppo">Oppo</option>
+                    <option value="Poco">Poco</option>
+                    <option value="Google">Google</option>
+                    <option value="Motorola">Motorola</option>
+                    <option value="Nokia">Nokia</option>
+
+                    <!-- Mid-Tier Brands -->
+                    <option value="Tecno">Tecno</option>
+                    <option value="Infinix">Infinix</option>
+                    <option value="iTel">iTel</option>
+                    <option value="Nothing">Nothing</option>
+                    <option value="Honor">Honor</option>
+                    <option value="Huawei">Huawei</option>
+                    <option value="Sony">Sony</option>
+                    <option value="LG">LG</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Lenovo">Lenovo</option>
+
+                    <!-- Lesser-Known & Budget Brands -->
+                    <option value="Micromax">Micromax</option>
+                    <option value="Lava">Lava</option>
+                    <option value="Karbonn">Karbonn</option>
+                    <option value="Jio">Jio</option>
+                    <option value="LYF">LYF</option>
+                    <option value="TCL">TCL</option>
+                    <option value="Alcatel">Alcatel</option>
+                    <option value="Black Shark">Black Shark</option>
+                    <option value="Xolo">Xolo</option>
+                    <option value="Gionee">Gionee</option>
+                    <option value="Coolpad">Coolpad</option>
+                    <option value="Meizu">Meizu</option>
+                    <option value="ZTE">ZTE</option>
+                    <option value="Ulefone">Ulefone</option>
+                    <option value="Umidigi">Umidigi</option>
+                    <option value="Wiko">Wiko</option>
+                    <option value="Yota">Yota</option>
+                    <option value="Zopo">Zopo</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="model">Model</label>
+                <input type="text" class="form-control" id="model" name="model" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price" name="price" required>
+            </div>
+
+            <h4>Specifications</h4>
+            <div class="form-group">
+                <label for="processor">Processor</label>
+                <input type="text" class="form-control" id="processor" name="processor" required>
+            </div>
+            <div class="form-group">
+                <label for="ram">RAM</label>
+                <select class="form-control" id="ram" name="ram" required>
+                    <option value="">Select RAM</option>
+                    <option value="2GB">2GB</option>
+                    <option value="4GB">4GB</option>
+                    <option value="6GB">6GB</option>
+                    <option value="8GB">8GB</option>
+                    <option value="12GB">12GB</option>
+                    <option value="16GB">16GB</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="storage">Storage</label>
+                <select class="form-control" id="storage" name="storage" required>
+                    <option value="">Select Storage</option>
+                    <option value="32GB">32GB</option>
+                    <option value="64GB">64GB</option>
+                    <option value="128GB">128GB</option>
+                    <option value="256GB">256GB</option>
+                    <option value="512GB">512GB</option>
+                    <option value="1TB">1TB</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="battery">Battery (mAh)</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="battery" name="battery" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">mAh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="back_camera">Back Camera (MP)</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="back_camera" name="back_camera" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">MP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="selfie_camera">Selfie Camera (MP)</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="selfie_camera" name="selfie_camera" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">MP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="photo">Photo</label>
+                <input type="file" class="form-control-file" id="photo" name="photo" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+</body>
+
+</html>

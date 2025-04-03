@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Eflyer</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+   <!-- Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!-- owl stylesheets -->
+   <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet">
+   <!-- Add Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+   <div class="container">
+      <!-- Ensure all sections are visible -->
+      <section id="section1">
+         <!-- banner bg main start -->
+         <div class="banner_bg_main">
+            <!-- header top section start -->
+            <div class="container">
+               <div class="header_section_top">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="custom_menu">
+                           <ul>
+                              <li><a href="#section2">Services</a></li>
+                              <li><a href="#mobile_section">Refurbished Mobiles</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- header top section start -->
+            <!-- logo section start -->
+            <div class="logo_section">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="logo">
+                           <h1 class="animated-logo">Sri Mobiles</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- logo section end -->
+            <!-- header section start -->
+            <div class="header_section">
+               <div class="container">
+                  <div class="containt_main">
+                     <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <ul>
+                           <li><a href="#section2">Services</a></li>
+                           <li><a href="#mobile_section">Refurbished Mobiles</a></li>
+                           <li><a href="#contact">Contact</a></li>
+                        </ul>
+                     </div>
+                     <span class="toggle_icon" onclick="openNav()"
+                        style="font-size: 24px; color: black; cursor: pointer;">&#9776;</span>
+                     <div class="main">
+                        <!-- Another variation with a button -->
+                        <div class="input-group">
+                           <input type="text" class="form-control" placeholder="Search this blog">
+                           <div class="input-group-append">
+                              <button class="btn btn-secondary" type="button"
+                                 style="background-color: #f26522; border-color:#f26522 ">
+                                 <i class="fa fa-search"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <!-- header section end -->
+            <!-- banner section start -->
+            <div class="banner_section layout_padding">
+               <div class="container">
+                  <div id="my_slider" class="carousel slide" data-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="row">
+                              <div class="col-sm-12">
+                                 <h1 class="banner_taital">Premium At Unbeatable Prices</h1>
+                                 <p class="banner_subtext">Certified, Tested & Like-New Quality – Without the Hefty
+                                    Price Tag!
+                                 </p>
+                                 <div class="buynow_bt"><a href="#">Shop Now</a></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="row">
+                              <div class="col-sm-12">
+                                 <h1 class="banner_taital">Top-Quality & Budget-Friendly</h1>
+                                 <p class="banner_subtext">Upgrade Smartly with Fully Inspected & Guaranteed Devices.
+                                 </p>
+                                 <div class="buynow_bt"><a href="#">Explore Deals</a></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="row">
+                              <div class="col-sm-12">
+                                 <h1 class="banner_taital">Big Savings & Like-New!</h1>
+                                 <p class="banner_subtext">Save More, Worry Less – Quality Assurance & Warranty
+                                    Included.</p>
+                                 <div class="buynow_bt"><a href="#">Discover Now</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- banner section end -->
+         </div>
+         <!-- banner bg main end -->
+      </section>
+      <section id="section2">
+         <!-- services section start -->
+         <div class="services_section layout_padding">
+            <div class="container">
+               <h1 class="services_taital">Our Services</h1>
+               <p class="services_text">We provide a wide range of services to meet all your mobile needs.</p>
+               <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="service_box">
+                        <div class="service_icon"><i class="fa fa-mobile fa-3x" aria-hidden="true"></i></div>
+                        <h4 class="service_title">1. Screen Replacement</h4>
+                        <ul class="service_list">
+                           <li>Replacement of broken, cracked, or unresponsive touchscreens</li>
+                           <li>LCD or OLED display repairs for different brands</li>
+                           <li>Fixing screen flickering, dead pixels, or ghost touches</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="service_box">
+                        <div class="service_icon"><i class="fa fa-battery-full fa-3x" aria-hidden="true"></i></div>
+                        <h4 class="service_title">2. Battery Replacement</h4>
+                        <ul class="service_list">
+                           <li>Replacing swollen, damaged, or rapidly draining batteries</li>
+                           <li>Use of genuine or high-quality compatible batteries</li>
+                           <li>Solving overheating problems related to the battery</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="service_box">
+                        <div class="service_icon"><i class="fa fa-tint fa-3x" aria-hidden="true"></i></div>
+                        <h4 class="service_title">3. Water Damage Repair</h4>
+                        <ul class="service_list">
+                           <li>Drying and cleaning internal components affected by liquid exposure</li>
+                           <li>Repairing short circuits caused by water damage</li>
+                           <li>Replacing corroded parts like the motherboard, connectors, or charging port</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="service_box">
+                        <div class="service_icon"><i class="fa fa-plug fa-3x" aria-hidden="true"></i></div>
+                        <h4 class="service_title">4. Charging Port & Speaker Issues</h4>
+                        <ul class="service_list">
+                           <li>Replacing a damaged charging port</li>
+                           <li>Fixing slow or inconsistent charging problems</li>
+                           <li>Repairing or replacing malfunctioning speakers, microphones, and headphone jacks
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="service_box">
+                        <div class="service_icon"><i class="fa fa-refresh fa-3x" aria-hidden="true"></i></div>
+                        <h4 class="service_title">5. Software Updates & Flashing</h4>
+                        <ul class="service_list">
+                           <li>Flashing firmware to fix software crashes, boot loops, or stuck devices</li>
+                           <li>Removing viruses, malware, or unwanted applications</li>
+                           <li>Resetting devices and optimizing software performance</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="service_box">
+                        <div class="service_icon"><i class="fa fa-database fa-3x" aria-hidden="true"></i></div>
+                        <h4 class="service_title">6. Data Recovery & Backup</h4>
+                        <ul class="service_list">
+                           <li>Retrieving lost or deleted data such as contacts, photos, and documents</li>
+                           <li>Backing up important data before factory resets or software updates</li>
+                           <li>Recovering data from damaged or non-functional devices</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- services section end -->
+      </section>
+      <!-- Mobile Sections by Brand -->
+      <section id="mobile_section">
+         {% for brand, mobiles in grouped_mobiles.items() %}
+         <div class="mobile_section">
+            <div class="container">
+               <h1 class="fashion_taital">{{ brand }}</h1>
+               <div id="{{ brand|slugify }}_carousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     {% for chunk in mobiles|batch(3) %}
+                     <div class="carousel-item {% if loop.first %}active{% endif %}">
+                        <div class="fashion_section_2">
+                           <div class="row">
+                              {% for mobile in chunk %}
+                              <div class="col-lg-4 col-sm-4">
+                                 <div class="box_main">
+                                    <h4 class="shirt_text">{{ mobile.model }}</h4>
+                                    <p class="price_text">Price <span style="color: #262626;">$ {{ mobile.price
+                                          }}</span></p>
+                                    <div class="tshirt_img" style="min-height: 200px; background-color: #f5f5f5;">
+                                       {% if mobile.photo %}
+                                       <img src="{{ mobile.photo }}" alt="{{ mobile.model }}"
+                                          style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                                       {% else %}
+                                       <div class="no-image" style="text-align: center; padding: 20px;">
+                                          <i class="fas fa-mobile-alt fa-3x"></i>
+                                          <p>Image not available</p>
+                                       </div>
+                                       {% endif %}
+                                    </div>
+                                    <ul class="specs_list">
+                                       <li>Battery: {{ mobile.battery }} mAh</li>
+                                       <li>Back Camera: {{ mobile.back_camera }} MP</li>
+                                       <li>Selfie Camera: {{ mobile.selfie_camera }} MP</li>
+                                       <li>Processor: {{ mobile.processor }}</li>
+                                       <li>RAM: {{ mobile.ram }}</li>
+                                       <li>Storage: {{ mobile.storage }}</li>
+                                    </ul>
+                                    <div class="btn_main">
+                                       <div class="buy_bt"><a href="#">Buy Now</a></div>
+                                       <div class="seemore_bt"><a href="#">See More</a></div>
+                                    </div>
+                                 </div>
+                              </div>
+                              {% endfor %}
+                           </div>
+                        </div>
+                     </div>
+                     {% endfor %}
+                  </div>
+                  <a class="carousel-control-prev" href="#{{ brand|slugify }}_carousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#{{ brand|slugify }}_carousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+         {% endfor %}
+      </section>
+      <section id="contact">
+         <div class="footer_section">
+            <div class="container">
+               <!-- Top Row - Logo and Newsletter -->
+               <div class="footer-top">
+                  <div class="footer-brand">
+                     <h1 class="animated-logo1">Sri Mobiles</h1>
+                     <p class="tagline">Your Trusted Mobile Destination Since 2010</p>
+                  </div>
+               </div>
+               <!-- Middle Row - Navigation and Contact -->
+               <div class="footer-middle">
+                  <!-- Quick Links -->
+                  <div class="footer-column">
+                     <h3>Quick Links</h3>
+                     <ul class="footer_menu">
+                        <li><a href="#section2">Services</a></li>
+                        <li><a href="#mobile_section">Refurbished Mobiles</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                     </ul>
+                  </div>
+                  <!-- Contact Info -->
+                  <div class="footer-column contact-info">
+                     <h3>Contact Us</h3>
+                     <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Tech Park Avenue,<br>Bangalore - 560001, Karnataka</p>
+                     </div>
+                     <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 98765 43210<br>+91 80 2567 8910</p>
+                     </div>
+                     <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@srimobiles.com<br>support@srimobiles.com</p>
+                     </div>
+                  </div>
+                  <!-- Business Hours -->
+                  <div class="footer-column">
+                     <h3>Working Hours</h3>
+                     <p>Monday - Friday: 10AM - 8PM</p>
+                     <p>Saturday: 10AM - 6PM</p>
+                     <p>Sunday: 11AM - 4PM</p>
+                  </div>
+                  <!-- Map -->
+                  <div class="footer-column map-container">
+                     <h3>Our Location</h3>
+                     <div class="map-wrapper">
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0045211112!2d77.59431431482193!3d12.97239099085621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf5df53c8e6b6f6b!2sTech%20Park%2C%20Bangalore!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                           width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                     </div>
+                  </div>
+               </div>
+               <!-- Bottom Row - Social and Copyright -->
+               <div class="footer-bottom">
+                  <div class="social-links">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+                  <div class="copyright">
+                     <p>&copy; 2023 Sri Mobiles. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a
+                           href="#">Terms
+                           of Service</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+</html>
